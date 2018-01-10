@@ -37,7 +37,7 @@ def listLastNlIndex(f,line_count=5):
         return listofIndexrev
     #if f.tell() is 0 already and we do a  f.seek(-1,1) then it will result in an IOError,
     #however I could have handled the situation more decoratively by placing a if f.tell() != 0 just
-    #before each and every f.seek(-1,1) but for now whatever works if enough.
+    #before each and every f.seek(-1,1) but for now whatever works is enough.
     except IOError as e:
         print "IOError Exception "
         print str(e)
